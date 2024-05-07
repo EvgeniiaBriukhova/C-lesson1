@@ -1,12 +1,17 @@
-﻿void PrintSquares(int limit)
+﻿// Дано число, необходимо возвести все числа
+// в квадрат до указанного в условиях числа.
+// Например - 5
+// Должно получиться: 1 4 9 26 25
+
+void PrintSquares(int limit)// функция вывод квадратов
 {
-    int i = 1;
+    int i = 1;// переменная счетчик
     while (i <= limit)
     {
-        Console.Write($"{i * i} ");
-        i++;
+        Console.Write($"{i * i} "); // выводим квадрат числа
+        i++; // переход к следующиму элементу
     }
 }
-PrintSquares(5);
+PrintSquares(5); // имя функции и ее элемент
 PrintSquares(10);
 PrintSquares(15);
